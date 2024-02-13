@@ -10,8 +10,8 @@ debug: FCFLAGS += -g -check all -fpe0 -warn -traceback -debug extended
 	-ffpe-trap=invalid,zero,overflow,underflow -finit-real=nan
 MKLLIB = -qmkl
 
-UTILS := utils/{constants,params,utils}.o # can I do this?
-ROUTINES := {}.o
+UTILS := utils/constants.o utils/params.o utils/utils.o
+ROUTINES := #{}.o
 
 all: clean main
 debug: clean main

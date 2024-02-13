@@ -5,6 +5,8 @@ module utils
   !private !> makes default of everything defined here private, use word public to counter.
   !if not used, can define a single private variable as well (everything else is public)
   logical,private :: available_outside = .FALSE. !> This variable is not available outside of the module
+  logical,private  :: reuse_normal_rand=.FALSE. !> used by normal_rand function
+  real(wp),private :: stored_normal_rand !> used by normal_rand function
 
   contains
    !> TRUE if the real number is indistinguishable from another real number

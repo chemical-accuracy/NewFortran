@@ -18,7 +18,7 @@ program main
   call read_parameters()
 
   ! INITIALIZE THE CALCULATION
-  write(6,*) "Information               :           "!, information
+  write(6,*) "Information  about running the program:           "!, some_information
   write(6,*) ! Use blank lines
 
   ! RUN THE PROGRAM
