@@ -1,0 +1,9 @@
+main
+.genmod
+.mod
+.vscode
+*__genmod.* 
+*.o 
+*.i 
+*.i90
+*.mod
